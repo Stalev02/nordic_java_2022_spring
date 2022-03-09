@@ -58,4 +58,9 @@ public class Shop implements IBuyer, ISeller {
     public void add(ProductAtShop product) {
         //найти удостовериться что такого продукта еще нет, иначе именить значение count
     }
+
+    @Override
+    public Product getInfo(long id) {
+        return null;
+    }
 }
