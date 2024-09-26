@@ -15,9 +15,7 @@ public class Product {
         return this.name.contains(name);
     }
 
-    public boolean compare(String name){
-        return this.name.contains(name);
-    }
+
 
     public double getWeight() {
         return weight;
@@ -30,6 +28,8 @@ public class Product {
     public String getName() {
         return name;
     }
+
+
 
     @Override
     public String toString() {

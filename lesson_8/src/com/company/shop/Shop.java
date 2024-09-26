@@ -55,7 +55,26 @@ public class Shop implements IBuyer, ISeller {
     }
 
     @Override
-    public void add(ProductAtShop product) {
-        //найти удостовериться что такого продукта еще нет, иначе именить значение count
+    public void add(Product product) {
+        for(Product prd : products){
+            if(prd.compare(product.getName())){
+
+            }
+        }
+    }
+
+    @Override
+    public ProductAtShop getInfo(long id) {
+        for(ProductAtShop product : products){
+            if(product.getId() == id){
+                return product;
+            }
+        }
+        throw new ProductNotFoundException("not found product");
+    }
+
+    @Override
+    public ProductAtShop updateProduct(long id, ProductAtShop product) {
+        return null;
     }
 }
